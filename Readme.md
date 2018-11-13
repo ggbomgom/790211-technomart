@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Павел Анищенко](https://up.htmlacademy.ru/htmlcss/23/user/790211).
-* Наставник: [Александр Тубольцов] (https://htmlacademy.ru/profile/id86460).
+* Наставник: [Александр Тубольцев](https://htmlacademy.ru/profile/id86460).
 
 ---
 
