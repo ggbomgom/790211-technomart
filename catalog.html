@@ -64,6 +64,25 @@
       <h1>Перфораторы</h1>
 
       <aside class="filters">
+        <h2 class="filter-title">Фильтр:</h2>
+        <form class="filter-actions" action="index.html" method="post">
+          <div class="filter-price">
+            <h3 class="price-title">Цена:</h3>
+            <!--Нельзя сделать позлунок надо чтобы информация от туда передавалась в JavaScript и выходила от туда в поля  числовых значений
+            без обработки ничего не получается
+            -->
+          </div>
+
+          <div class="filter-manufacturer">
+            <h3 class="manufacturer-title">Производители</h3>
+            <p>
+              <label><input type="checkbox" name="manufacturer" checked value="bosch">BOSCH</label><br>
+              <label><input type="checkbox" name="manufacturer" value="intersckol">ИНТЕРСКОЛ</label><br>
+              <label><input type="checkbox" name="manufacturer" checked value="makita">MAKIta</label><br>
+              <label><input type="checkbox" name="manufacturer" value="dewalt">Dewalt</label><br>
+              <label><input type="checkbox" name="manufacturer" value="hitachi">Hitachi</label>
+            </p>
+          </div>
 
         <!--input -->
 
