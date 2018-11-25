@@ -65,16 +65,14 @@
 
       <aside class="filters">
         <h2 class="filter-title">Фильтр:</h2>
-        <form class="filter-actions" action="index.html" method="post">
-          <div class="filter-price">
-            <h3 class="price-title">Цена:</h3>
-            <!--Нельзя сделать позлунок надо чтобы информация от туда передавалась в JavaScript и выходила от туда в поля  числовых значений
-            без обработки ничего не получается
-            -->
-          </div>
+        <form class="filter-actions" action="echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-price">
+            <legend class="price-title">Цена:</legend>
 
-          <div class="filter-manufacturer">
-            <h3 class="manufacturer-title">Производители</h3>
+          </fieldset>
+
+          <fieldset class="filter-manufacturer">
+            <legend class="manufacturer-title">Производители</legend>
             <p>
               <label><input type="checkbox" name="manufacturer" checked value="bosch">BOSCH</label><br>
               <label><input type="checkbox" name="manufacturer" value="intersckol">ИНТЕРСКОЛ</label><br>
@@ -82,15 +80,15 @@
               <label><input type="checkbox" name="manufacturer" value="dewalt">Dewalt</label><br>
               <label><input type="checkbox" name="manufacturer" value="hitachi">Hitachi</label>
             </p>
-          </div>
+          </fieldset>
 
-          <div class="filter-nutrition">
-            <h3 class="nutrition-title">Питание:</h3>
+          <fieldset class="filter-nutrition">
+            <legend class="nutrition-title">Питание:</legend>
 
             <label><input type="radio" name="nutrition" value="battery" checked>Аккумуляторные</label><br>
             <label><input type="radio" name="nutrition" value="network">Сетевые</label>
-          </div>
-          <button type="submit" name="button" class="filters-submit">Показать</button>
+          </fieldset>
+          <button type="submit"  class="filters-submit">Показать</button>
         </form>
 
 
@@ -386,13 +384,13 @@
     </footer>
 
     <div class="pop-up added-item">
-      <button type="button" name="close-added" class="close" aria-label="Закрыть"></button>
+      <button type="button"  class="close" aria-label="Закрыть"></button>
 
       <h3 class="title-added">Товар добавлен в корзину!</h3>
 
       <a href="#" class="go-tu">Оформить заказ</a>
 
-      <button type="button" name="continue" class="continue">Продолжить покупки</button>
+      <button type="button" class="continue">Продолжить покупки</button>
       </div>
   </body>
 </html>
