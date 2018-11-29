@@ -507,3 +507,77 @@ a{
 }
 /*------------------*/
 
+/*Footer*/
+.main-footer{
+  background-color:#32425c;
+}
+.main-footer ul{
+  list-style: none;
+}
+
+.footer-nav{
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.footer-nav .logo{
+  font-size: 30px;
+  line-height: 1;
+}
+
+.footer-nav p{
+  color: #f3f7f9;
+}
+
+.footer-main-nav{
+
+}
+
+.footer-add-nav{
+
+}
+.footer-add-nav a{
+  color: #ffd180;
+}
+
+.footer-main-nav a:hover,
+.footer-main-nav a:focus,
+.footer-add-nav a:hover,
+.footer-add-nav a:focus{
+  text-decoration: underline;
+}
+
+.footer-main-nav a:active,
+.footer-add-nav a:active{
+  opacity: 0.5;
+
+  text-decoration: none;
+}
+
+
+.footer-bottom{
+  font-size: 16px;
+  line-height: 1.13;
+
+  background-color: #293449;
+
+  color: #ffffff;
+}
+
+.footer-bottom  a{
+  color: #ffd180;
+}
+.footer-bottom a:hover,
+.footer-bottom a:focus{
+  text-decoration: underline;
+}
+.footer-bottom a:active{
+  text-decoration: none;
+
+  color: #ee3643;
+}
+
+.social{
+  display: none;
+
+}
