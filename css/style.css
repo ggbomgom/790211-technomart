@@ -410,3 +410,28 @@ a{
 }
 
 
+.filters{
+  font-family: "PT Sans",sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.33;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.filters .filter-title{
+  font-size: 13px;
+  line-height: 1.38;
+  font-weight: inherit;
+
+  background-color: #f7f3ec;
+}
+
+.filter .title{
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+}
+
+
