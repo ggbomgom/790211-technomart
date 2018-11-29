@@ -1,0 +1,29 @@
+/*Global teg*/
+body{
+  margin:0px;
+  padding: 0px;
+
+  font-family: Cuprum, Arial sans-serif;
+
+}
+
+a{
+  text-decoration: none;
+  color:#ffffff;
+}
+.button{
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: normal;
+
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+.button:hover,
+.button:focus{
+  background-color: #ca2c37;
+}
+.button:active{
+  background-color: #ba2732;
+}
