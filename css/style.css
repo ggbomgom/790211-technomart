@@ -243,3 +243,48 @@ a{
 }
 
 
+.popular-items{
+
+}
+.popular-title{
+  background-color: #f9f5f0;
+}
+.popular-title h2{
+  font-size: 30px;
+  line-height: 30px;
+
+  color:#32425c;
+}
+
+.items ul{
+  font-family: "PT Sans",sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+
+
+  list-style: none;
+}
+
+.item-title a{
+  font: inherit;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.catalog-item p[class*="price"]{
+  font-size: 18px;
+  line-height: 20px;
+}
+.old-price{
+  text-decoration: line-through;
+
+  color: #a9a9a9;
+}
+.new-price{
+  background-color: #CE3642;
+
+  color: #ffffff;
+}
+
+
