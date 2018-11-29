@@ -14,32 +14,30 @@
           Техномарт
         </a>
 
-        <form class="header-search" action="index.html" method="get">
+        <form class="search" action="index.html" method="get">
           <input type="search" name="search" placeholder="Поиск" aria-label="Строка поиска">
           <input type="submit" name="search-bottom"  aria-label="Подтвердить поиск">
         </form>
 
-        <span class="header-bookmarks"><a href="#">Закладки:</a></span>
-        <span class="header-basket"><a href="#">Корзина:</a></span>
-        <span class="header-order"><a href="#">Оформить заказ</a></span>
+        <span class="bookmarks"><a href="#">Закладки:</a></span>
+        <span class="basket"><a href="#">Корзина:</a></span>
+        <span class="order"><a href="#">Оформить заказ</a></span>
       </div>
 
       <div class="header-middle">
-
         <h1 class="header-title">
             Интернет-магазинстроительных материалови инструментов для ремонта
         </h1>
 
-
         <p class="header-info">
 
-          <a href="tel:+78125550555" class="info-number">+7(812)555-05-55</a>
+          <a href="tel:+78125550555" class="info-number">+7(812)555-05-55</a><br>
 
 
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
 
-        <ul class="header-ingress">
+        <ul class="account">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Регистрация</a></li>
         </ul>
@@ -61,34 +59,46 @@
 
 
     <main>
-      <section class="main-relevant">
-        <h2>Релевантное объявление</h2>
+      <section class="relevant">
+        <h2 class="visually-hidden">Релевантное объявление</h2>
 
-        <div class="relevant-additional material">
-          <span><a href="#"></a></span>
+        <div class="additional material">
+          <h3>Материалы</h3>
+          <span class="new">New</span>
+          <a href="#">на любой вкус</a>
         </div>
-        <div class="relevant-additional instruments">
-          <span><a href="#"></a></span>
+        <div class="additional instruments">
+          <h3>Инструмент</h3>
+          <a href="#">на все случаи</a>
         </div>
-        <div class="relevant-additional equipment">
-          <span><a href="#"></a></span>
+        <div class="additional equipment">
+          <h3>Техника</h3>
+          <a href="#">для стройки</a>
         </div>
-        <div class="relevant-main">
-          <span><a href="#"></a></span>
+        <div class="slide">
+          <div>
+            <button class="handle" type="button"></button>
+            <button class="handle" type="button"></button>
+          </div>
+          <a class="button" href="#">Открыть каталог</a>
         </div>
-        <div class="relevant-additional sale">
-          <span><a href="#"></a></span>
+        <div class="additional sale">
+          <h3>Скидки 50%</h3>
+          <a href="#">На 350 ТОВАРОВ</a>
         </div>
-        <div class="relevant-additional delivery">
-          <span><a href="#"></a></span>
+        <div class="additional delivery">
+          <h3>Доставка</h3>
+          <a href="#">бесплатно</a>
         </div>
       </section>
 
-      <section class="popular-items">
-        <h2>Популярные товары:</h2>
+      <section class="popular items">
+        <div class="popular-title">
+          <h2>Популярные товары:</h2>
 
-        <a href="#" class="button">Все популярные товары</a>
+          <a href="#" class="button">Все популярные товары</a>
 
+        </div>
         <ul>
           <li class="catalog-item">
 
@@ -179,10 +189,12 @@
       </section>
 
 
-      <section class="popular-manufacturer">
+      <section class="manufacturer">
 
-        <h2>Популярные производители:</h2>
-        <a href="#" class="button">Все производители</a>
+        <div class="manufacturer-title">
+          <h2>Популярные производители:</h2>
+          <a href="#" class="button">Все производители</a>
+        </div>
         <ul>
           <li><a href="#"><img src="img/index/logo-bosch.png" alt="bosch" width="126" height="37"></a></li>
           <li><a href="#"><img src="img/index/logo-makita.png" alt="Makita" width="123" height="40"></a></li>
@@ -212,7 +224,7 @@
 
         <h3>Доставка</h3>
 
-        <p>
+        <p class="description delivery">
           Мы с удовольствием доставим ваш товар прямо<br>
           к вашему подъезду совершенно бесплатно!<br>
           Ведь мы неплохо заработаем,<br>
@@ -242,7 +254,7 @@
         </div>
 
         <div class="info-geo">
-          <h3>Контакты</h3>
+          <h2>Контакты</h2>
 
           <p>
             Вы можете забрать товар сами, <br>
@@ -284,10 +296,10 @@
 
 
       <div class="footer-bottom">
-        <ul>
-          <li>© 2010–2017 Компания «Техномарт»</li>
-          <li>Все права защищены</li>
-        </ul>
+        <p>
+          © 2010–2017 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
 
         <div class="social">
           <ul>

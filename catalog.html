@@ -14,14 +14,14 @@
           Техномарт
         </a>
 
-        <form class="header-search" action="index.html" method="get">
+        <form class="search" action="index.html" method="get">
           <input type="search" name="search" placeholder="Поиск" aria-label="Строка поиска">
           <input type="submit" name="search-bottom"  aria-label="Подтвердить поиск">
         </form>
 
-        <span class="header-bookmarks"><a href="#">Закладки:</a></span>
-        <span class="header-basket"><a href="#">Корзина:</a></span>
-        <span class="header-order"><a href="#">Оформить заказ</a></span>
+        <span class="bookmarks"><a href="#">Закладки:</a></span>
+        <span class="basket"><a href="#">Корзина:</a></span>
+        <span class="order"><a href="#">Оформить заказ</a></span>
       </div>
 
       <div class="header-middle">
@@ -30,13 +30,12 @@
         </h1>
 
         <p class="header-info">
-
-          <a href="tel:+78125550555" class="info-number">+7(812)555-05-55</a>
+          <a href="tel:+78125550555" class="info-number">+7(812)555-05-55</a><br>
 
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
 
-        <ul class="header-ingress">
+        <ul class="account">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Регистрация</a></li>
         </ul>
@@ -64,7 +63,7 @@
         <li>Перфораторы</li>
       </ul>
 
-      <h1>Перфораторы</h1>
+      <h1 class="internally-title">Перфораторы</h1>
 
       <aside class="filters">
         <h2 class="filter-title">Фильтр:</h2>
@@ -74,8 +73,8 @@
 
           </fieldset>
           -->
-          <fieldset class="filter-manufacturer">
-            <legend class="manufacturer-title">Производители</legend>
+          <fieldset class="filter filter-manufacturer">
+            <legend class="title">Производители</legend>
             <p>
               <label><input type="checkbox" name="manufacturer" checked value="bosch">BOSCH</label><br>
               <label><input type="checkbox" name="manufacturer" value="intersckol">ИНТЕРСКОЛ</label><br>
@@ -85,8 +84,8 @@
             </p>
           </fieldset>
 
-          <fieldset class="filter-nutrition">
-            <legend class="nutrition-title">Питание:</legend>
+          <fieldset class="filter filter-nutrition">
+            <legend class="title">Питание:</legend>
 
             <label><input type="radio" name="nutrition" value="battery" checked>Аккумуляторные</label><br>
             <label><input type="radio" name="nutrition" value="network">Сетевые</label>
@@ -99,7 +98,7 @@
 				<h2>Сортировка:</h2>
 				<!--Необходимо доработать в будущем-->
 				<ul class="sorting-menu">
-					<li><a href="#">по цене</a></li>
+					<li><a class="active" href="#">по цене</a></li>
 					<li><a href="#">по типу</a></li>
 					<li><a href="#">по функционалу</a></li>
 					<li><a href="#"></a></li>
@@ -107,7 +106,7 @@
 				</ul>
 			</aside>
 
-      <section class="catalog-items">
+      <section class="catalog items">
         <ul>
           <li class="catalog-item">
 
@@ -300,10 +299,10 @@
         </ul>
 
         <ul class="pagination">
-          <li class="button-pagination"><a href="#">1</a></li>
-          <li class="button-pagination"><a href="#">2</a></li>
-          <li class="button-pagination"><a href="#">3</a></li>
-          <li class="button-pagination button-next"><a href="#">Следующая</a></li>
+          <li><a class="button-pagination active" href="#">1</a></li>
+          <li><a class="button-pagination" href="#">2</a></li>
+          <li><a class="button-pagination" href="#">3</a></li>
+          <li><a class="button-pagination button-next" href="#">Следующая</a></li>
         </ul>
       </section>
 
@@ -322,10 +321,11 @@
           Техномарт
         </a>
 
-        <ul>
-          <li>© 2010–2017 Компания «Техномарт»</li>
-          <li>Все права защищены</li>
-        </ul>
+        <p>
+          © 2010–2017 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
+
 
         <ul class="footer-main-nav">
           <li><a href="#">Компания</a></li>
