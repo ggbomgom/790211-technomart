@@ -489,3 +489,21 @@ a{
 }
 
 
+.main-info{
+  background-color: #F3F6F8;
+}
+
+.main-info h2{
+  font-size: 30px;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.main-info p{
+  font-family: 'PT Sans',sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  font-weight: normal;
+}
+/*------------------*/
+
