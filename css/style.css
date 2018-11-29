@@ -385,3 +385,18 @@ a{
   font-size: 18px;
   line-height: 1.11;
 }
+/*------------------*/
+/*Internal page properties*/
+.breadcrumbs{
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+
+  list-style: none;
+
+}
+.breadcrumbs a{
+  color: #000000;
+}
+
+
