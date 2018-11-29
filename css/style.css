@@ -288,3 +288,18 @@ a{
 }
 
 
+.manufacturer{
+
+}
+
+.manufacturer-title{
+  background-color: #f9f5f0;
+}
+.manufacturer-title h2{
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #32425c;
+}
+
+
