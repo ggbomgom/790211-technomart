@@ -466,3 +466,26 @@ a{
 }
 
 
+.pagination{
+  list-style: none;
+}
+
+.pagination a{
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+
+  color: #000000;
+}
+
+.pagination a:hover:not(.active),
+.pagination a:focus:not(.active){
+
+}
+.pagination a:active,
+.pagination .active{
+
+}
+
+
