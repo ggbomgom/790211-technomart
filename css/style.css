@@ -363,3 +363,25 @@ a{
 }
 
 
+.main-info{
+  color: #000000;
+}
+
+.main-info h2{
+  font-size: 30px;
+  line-height: 1;
+
+
+}
+
+.main-info p{
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.delivery-methods{
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.11;
+}
