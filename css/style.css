@@ -196,3 +196,50 @@ a{
 
   color: rgba(255, 255, 255, 0.5);
 }
+/*----------*/
+/*Index*/
+.relevant{
+  text-align: center;
+}
+.relevant h3{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+}
+.relevant .additional{
+
+}
+.relevant .material{
+  background-color: #ffbf47;
+}
+.relevant .instruments{
+  background-color: #3bbce3;
+}
+.relevant .equipment{
+  background-color: #dc91d8;
+}
+.relevant .sale{
+  background-color: #8ed78f;
+}
+.relevant .delivery{
+  background-color: #ffc047;
+}
+
+.relevant a{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.relevant a:hover,
+.relevant a:focus{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.relevant a:active{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
