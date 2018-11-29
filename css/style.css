@@ -303,3 +303,63 @@ a{
 }
 
 
+.service{
+  background-color: #F6F8FA;
+}
+
+.service h2{
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.service-tagline{
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+
+  background-color: ;
+}
+
+.service-list{
+  list-style: none;
+  font-weight: bold;
+}
+
+.service-list li{
+
+}
+
+.service-list a{
+  font-size: 21px;
+  line-height: 30px;
+
+  background-color: #33445a;
+}
+.service-list a:hover,
+.service-list a:focus{
+  background-color: #293449;
+}
+.service-list a:active{
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.service h3{
+  font-size: 36px;
+  line-height: 1;
+
+  color: #32425c;
+}
+
+.service .description{
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+
+  color: #000000;
+}
+
+
