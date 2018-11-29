@@ -400,3 +400,13 @@ a{
 }
 
 
+.internally-title{
+  font-size: 30px;
+  line-height: 1;
+
+  color: #32425c;
+
+  background-color: #f2f6f8;
+}
+
+
