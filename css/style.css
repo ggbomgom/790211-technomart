@@ -27,3 +27,172 @@ a{
 .button:active{
   background-color: #ba2732;
 }
+/*Header*/
+.main-header{
+  background-color: #f3f7f8;
+}
+
+.header-top-sidebar{
+  background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.logo{
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ee3643;
+}
+.logo:hover{
+  background-color: #ca2c37;
+}
+.logo:active,
+.logo:focus
+{
+  background-color: #ba2732;
+}
+
+.search{
+
+}
+
+.search input[type="search"]{
+  font:inherit;
+
+  background-color: inherit;
+
+  border:none;
+}
+.search input[type="search"]:hover{
+  background-color: #212a3a;
+}
+.search input[type="search"]:focus{
+  background-color: #ffffff;
+
+  outline: none;
+
+  color: #000000;
+}
+.search input[type="submit"]{
+  font-size: 0px;
+
+  border:none;
+
+  margin:0px;
+  padding:5px;
+  background-color:transparent;
+}
+
+.bookmark{
+
+}
+.basket{
+
+}
+.bookmarks:hover,
+.bookmarks a:focus,
+.basket:hover,
+.basket a:focus{
+  background-color: #212a3a;
+}
+.bookmark a:active,
+.basket a:active{
+  background-color: #161d29;
+}
+
+.order{
+  background-color: #63a63e;
+}
+.order:hover,
+.order a:focus{
+  background-color: #5fbb2d;
+}
+.order a:active{
+  background-color: #518534;
+  color:rgba(255, 255, 255, 0.5);
+}
+
+
+.header-middle{
+
+}
+
+.header-title{
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+
+  text-align: left;
+
+  color:rgba(238, 54, 67, 0.7);
+}
+
+.header-info{
+  text-align:center;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #32425c;
+}
+
+.info-number{
+  font-size: 21px;
+  line-height: 21px;
+
+  border:3px solid #ffffff;
+
+  color:#ee3643;
+}
+
+.account{
+  list-style: none;
+
+  font-size:21px;
+  line-height: 21px;
+
+  text-align:center;
+}
+
+.account a{
+  color: #000000;
+
+  background-color:#ffffff;
+}
+.account a:hover,
+.account a:focus{
+  color:#ee3643;
+}
+.account a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.main-nav{
+  font-size: 17px;
+  line-height: 17px;
+
+  background-color: #32425c;
+}
+
+.header-nav{
+  list-style:none;
+}
+
+.header-nav li{
+
+}
+
+.header-nav a{
+
+}
+.header-nav a:hover,
+.header-nav a:focus{
+  /*box-shadow:inset;
+    outline:none;*/
+}
+.header-nav a:active{
+  background-color: #1d2739;
+
+  color: rgba(255, 255, 255, 0.5);
+}
