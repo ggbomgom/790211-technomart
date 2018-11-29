@@ -435,3 +435,34 @@ a{
 }
 
 
+.sorting{
+  font-family: "PT Sans",sans-serif;
+  font-weight:normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+}
+
+.sorting h2{
+  font:inherit;
+}
+
+.sorting .sorting-menu{
+  list-style: none;
+}
+
+.sorting-menu a{
+  color: rgba(0, 0, 0, 0.3);
+}
+.sorting-menu a:hover:not(.active),
+.sorting-menu a:focus:not(.active){
+  color: #000000;
+}
+.sorting-menu a:active,
+.sorting-menu .active{
+  color: #ee3643;
+}
+
+
