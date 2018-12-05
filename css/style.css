@@ -288,16 +288,38 @@ a{
 
   margin-bottom: 53px;
 }
+
+.help-column{
+  display: flex;
+  flex-direction: column;
 }
+
+.relevant .additional{
+  width: 300px;
+  min-height: 123px;
+
+  margin-bottom: 20px;
+}
+
+
+
+.relevant .slide{
+  width: 620px;
+  min-height: 266px;
+
+  margin-right: 20px;
+}
+
 .relevant h3{
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
   color: #ffffff;
-}
-.relevant .additional{
 
+  margin: 0px;
+  padding: 0px;
 }
+
 .relevant .material{
   background-color: #ffbf47;
 }
