@@ -430,19 +430,44 @@ a{
 
 
 .manufacturer{
+  display: flex;
+  flex-direction: column;
 
+  margin-bottom: 85px;
 }
 
 .manufacturer-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   background-color: #f9f5f0;
 }
-.manufacturer-title h2{
+.manufacturer-title .title{
   font-size: 30px;
   line-height: 30px;
 
-  color: #32425c;
+  color:#32425c;
+
+  margin-left: 30px;
+}
+.manufacturer-title .button{
+  margin-right: 30px;
 }
 
+.manufacturer .manufacturer-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.manufacturer-list li{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
 .service{
   background-color: #F6F8FA;
