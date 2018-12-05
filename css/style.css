@@ -594,30 +594,73 @@ a{
 }
 /*------------------*/
 /*Internal page properties*/
+
+.inner-page{
+  display: flex;
+  flex-direction: column;
+}
+
 .breadcrumbs{
+  display: flex;
+
   font-family: "PT Sans",sans-serif;
   font-size: 13px;
   line-height: 1.38;
 
   list-style: none;
 
+  margin: 0px;
+  padding: 0px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+}
+.breadcrumbs li{
+  margin-left: 39px;
+
 }
 .breadcrumbs a{
   color: #000000;
+  min-height: 9px;
 }
 
 
 .internally-title{
+  box-sizing: border-box;
   font-size: 30px;
   line-height: 1;
 
   color: #32425c;
 
   background-color: #f2f6f8;
+
+
+
+  margin: 0px;
+  padding: 0px;
+
+  padding-left: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  margin-bottom: 20px;
+
+  min-height: 89px;
+}
+
+
+.inner-page-help{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
 .filters{
+  display: flex;
+  flex-direction: column;
+
   font-family: "PT Sans",sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -625,6 +668,8 @@ a{
   text-transform: uppercase;
 
   color: #000000;
+
+  margin-right: 20px;
 }
 
 .filters .filters-title{
@@ -633,6 +678,9 @@ a{
   font-weight: inherit;
 
   background-color: #f7f3ec;
+
+  margin: 0px;
+  padding: 0px;
 }
 
 .filter .filter-title{
@@ -641,8 +689,21 @@ a{
   line-height: 1.76;
 }
 
+.catalog-column{
+  display: flex;
+  flex-direction: column;
+
+  width: 700px;
+  min-height: 1142px;
+
+  margin-bottom: 60px;
+}
+
+
 
 .sorting{
+  display: flex;
+
   font-family: "PT Sans",sans-serif;
   font-weight:normal;
   font-size: 13px;
@@ -674,7 +735,12 @@ a{
 
 
 .pagination{
+  display: flex;
+
   list-style: none;
+
+  margin: 0px;
+  padding: 0px;
 }
 
 .pagination a{
@@ -696,17 +762,17 @@ a{
 }
 
 
-.main-info{
+.inner-info{
   background-color: #F3F6F8;
 }
 
-.main-info h2{
+.inner-info h2{
   font-size: 30px;
   line-height: 1;
   font-weight: normal;
 }
 
-.main-info p{
+.inner-info p{
   font-family: 'PT Sans',sans-serif;
   font-size: 13px;
   line-height: 1.85;
