@@ -550,13 +550,23 @@ a{
 
 .main-info{
   color: #000000;
+  display: flex;
+
+  margin-right: 120px;
+}
+
+.main-info .info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  weight: 519px;
+  min-height: 368px;
 }
 
 .main-info h2{
   font-size: 30px;
   line-height: 1;
-
-
 }
 
 .main-info p{
@@ -569,6 +579,18 @@ a{
   list-style: none;
   font-size: 18px;
   line-height: 1.11;
+
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.main-info .info-geo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width:300px;
+  min-height: 368px;
 }
 /*------------------*/
 /*Internal page properties*/
