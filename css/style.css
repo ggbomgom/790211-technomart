@@ -717,14 +717,31 @@ a{
 /*Footer*/
 .main-footer{
   background-color:#32425c;
+  display: flex;
+  flex-direction: column;
 }
 .main-footer ul{
   list-style: none;
+
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer-nav{
+  display: flex;
+  flex-direction: row;
+
+
   font-size: 18px;
   line-height: 1.33;
+}
+
+.footer-column-1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-right: 68px;
 }
 
 .footer-nav .logo{
@@ -736,12 +753,23 @@ a{
   color: #f3f7f9;
 }
 
-.footer-main-nav{
+.footer-column-2{
+  display: flex;
+  flex-direction: column;
+}
 
+.footer-main-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-add-nav{
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer-add-nav a{
   color: #ffd180;
@@ -761,12 +789,17 @@ a{
   text-decoration: none;
 }
 
+.footer-bottom-bg{
+  background-color: #293449;
+}
 
 .footer-bottom{
+  display: flex;
+  flex-direction: row;
+
+
   font-size: 16px;
   line-height: 1.13;
-
-  background-color: #293449;
 
   color: #ffffff;
 }
