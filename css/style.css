@@ -51,18 +51,52 @@ a{
 
 /*Header*/
 .main-header{
-  background-color: #f3f7f8;
-}
+  display: flex;
+  flex-direction: column;
 
-.header-top-sidebar{
+  background-color: #f3f7f8;
+
+  padding-bottom: 60px;
+}
+.header-bg{
+  display: flex;
+
+  width: 100%;
+
+  margin-bottom: 46px;
+
   background-color: #293449;
+}
+.header-top-sidebar{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 42px;
+
+  align-items: center;
+
   font-size: 17px;
   line-height: 18px;
 }
 
+.header-top-sidebar>*:not(.order){
+  margin-right: 10px;
+}
+
 .logo{
+  box-sizing: border-box;
+
   font-size: 24px;
   line-height: 24px;
+
+  text-align: center;
+
+  padding: 10px 0px;
+
+  width: 220px;
+  min-height: 42px;
+
   background-color: #ee3643;
 }
 .logo:hover{
@@ -84,6 +118,9 @@ a{
   background-color: inherit;
 
   border:none;
+
+  width: 240px;
+  min-height: 42px;
 }
 .search input[type="search"]:hover{
   background-color: #212a3a;
@@ -105,12 +142,15 @@ a{
   background-color:transparent;
 }
 
-.bookmark{
-
+.bookmarks{
+  width: 140px;
+  min-height: 42px;
 }
 .basket{
-
+  width: 140px;
+  min-height: 42px;
 }
+
 .bookmarks:hover,
 .bookmarks a:focus,
 .basket:hover,
@@ -124,6 +164,9 @@ a{
 
 .order{
   background-color: #63a63e;
+
+  width: 150px;
+  min-height: 42px;
 }
 .order:hover,
 .order a:focus{
@@ -136,7 +179,9 @@ a{
 
 
 .header-middle{
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header-title{
@@ -198,7 +243,18 @@ a{
 }
 
 .header-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 60px;
+
   list-style:none;
+
+  margin: 0px;
+  margin-top: 44px;
+  padding: 0px;
 }
 
 .header-nav li{
@@ -221,7 +277,17 @@ a{
 /*----------*/
 /*Index*/
 .relevant{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-content: space-between;
+  justify-content:space-between;
+
   text-align: center;
+
+  margin-bottom: 53px;
+}
 }
 .relevant h3{
   font-size: 24px;
