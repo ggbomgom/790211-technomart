@@ -470,6 +470,11 @@ a{
 }
 
 .service{
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 82px;
+
   background-color: #F6F8FA;
 }
 
@@ -485,12 +490,22 @@ a{
   font-size: 13px;
   line-height: 24px;
 
-  background-color: ;
+  margin-bottom: 70px;
+}
+
+.service-help-column{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .service-list{
   list-style: none;
   font-weight: bold;
+
+  margin: 0px;
+  padding: 0px;
+  margin-right: 80px;
 }
 
 .service-list li{
@@ -518,9 +533,13 @@ a{
   line-height: 1;
 
   color: #32425c;
+
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .service .description{
+
   font-family: "PT Sans",sans-serif;
   font-size: 13px;
   line-height: 1.85;
