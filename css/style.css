@@ -77,7 +77,10 @@ a{
   line-height: 18px;
 }
 
-.main-header .header-top>*:not(.order){
+.header-top .logo,
+.header-top .search,
+.header-top .bookmarks,
+.header-top .basket{
   margin-right: 10px;
 }
 
