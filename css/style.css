@@ -403,6 +403,8 @@ a{
   align-items: center;
 
   background-color: #f9f5f0;
+
+  margin-bottom: 20px;
 }
 .popular-title .title{
   font-size: 30px;
@@ -431,6 +433,7 @@ a{
 
   margin: 0px;
   padding: 0px;
+  margin-right: -20px;
 }
 
 .catalog-list .catalog-item{
@@ -441,6 +444,8 @@ a{
 
   width: 220px;
   min-height: 318px;
+  margin-bottom: 20px;
+  margin-right: 20px;}
 }
 
 .item-title a{
