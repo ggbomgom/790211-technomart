@@ -290,7 +290,7 @@ a{
   margin-bottom: 53px;
 }
 
-.help-column{
+.relevant .help-column{
   display: flex;
   flex-direction: column;
 }
@@ -558,23 +558,30 @@ a{
 }
 
 .main-info .info{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 
-  weight: 519px;
+  width: 519px;
   min-height: 368px;
+
+  margin-right: 120px;
 }
 
 .main-info h2{
   font-size: 30px;
   line-height: 1;
+
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .main-info p{
   font-family: "PT Sans",sans-serif;
   font-size: 13px;
   line-height: 1.85;
+
+  margin: 0px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .delivery-methods{
@@ -587,9 +594,6 @@ a{
 }
 
 .main-info .info-geo{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 
   width:300px;
   min-height: 368px;
@@ -598,8 +602,7 @@ a{
 /*Internal page properties*/
 
 .inner-page{
-  display: flex;
-  flex-direction: column;
+
 }
 
 .breadcrumbs{
@@ -660,8 +663,6 @@ a{
 
 
 .filters{
-  display: flex;
-  flex-direction: column;
 
   font-family: "PT Sans",sans-serif;
   font-size: 15px;
@@ -672,6 +673,9 @@ a{
   color: #000000;
 
   margin-right: 20px;
+
+  width: 220px;
+  min-height: 746px;
 }
 
 .filters .filters-title{
@@ -692,8 +696,7 @@ a{
 }
 
 .catalog-column{
-  display: flex;
-  flex-direction: column;
+
 
   width: 700px;
   min-height: 1142px;
@@ -766,6 +769,7 @@ a{
 
 .inner-info{
   background-color: #F3F6F8;
+  width: 100%;
 }
 
 .inner-info h2{
@@ -785,8 +789,7 @@ a{
 /*Footer*/
 .main-footer{
   background-color:#32425c;
-  display: flex;
-  flex-direction: column;
+
 }
 .main-footer ul{
   list-style: none;
