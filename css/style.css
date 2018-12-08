@@ -77,7 +77,8 @@ a{
 .header-top .header-top-actions{
   display: flex;
   justify-content: flex-end;
-  width: 720px;
+
+  flex-basis: 100%;
 }
 
 /*
@@ -102,6 +103,8 @@ a{
   min-height: 42px;
 
   background-color: #ee3643;
+
+  flex-shrink: 0;
 }
 .logo:hover{
   background-color: #ca2c37;
@@ -116,6 +119,8 @@ a{
   min-height: 42px;
 
   display: flex;
+  
+  flex-shrink: 0;
 }
 
 .search input[type="search"]{
