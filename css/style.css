@@ -804,7 +804,7 @@ a{
   line-height: 1.33;
 }
 
-.footer-column-1{
+.footer-column-left{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -815,15 +815,17 @@ a{
 .footer-nav .logo{
   font-size: 30px;
   line-height: 1;
+
+  padding-left: 41px;
+  padding-right: 41px;
 }
 
 .footer-nav p{
   color: #f3f7f9;
 }
 
-.footer-column-2{
-  display: flex;
-  flex-direction: column;
+.footer-column-right{
+
 }
 
 .footer-main-nav{
