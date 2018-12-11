@@ -12,6 +12,15 @@ a{
   color:#ffffff;
 }
 .button{
+  display: block;
+  width: 253px;
+  min-height: 38px;
+  box-sizing: border-box;
+
+  padding-top:11px;
+
+  text-align: center;
+
   font-size: 14px;
   line-height: 1.29;
   font-weight: normal;
@@ -19,6 +28,8 @@ a{
   color: #ffffff;
 
   background-color: #ee3643;
+
+
 }
 .button:hover,
 .button:focus{
@@ -460,15 +471,11 @@ input[type="search"]:focus+.search-submit{
   margin: 0px;
 
   padding: 0px;
-
 }
 
 .nav-list li{
   flex-basis: 100%;
   min-height: 60px;
-
-
-
 }
 
 .nav-list a{
@@ -509,16 +516,17 @@ input[type="search"]:focus+.search-submit{
 .relevant .help-column{
   display: flex;
   flex-direction: column;
+
+  margin-bottom: -20px;
 }
 
 .relevant .additional{
+  position: relative;
   width: 300px;
   min-height: 123px;
 
   margin-bottom: 20px;
 }
-
-
 
 .relevant .slide{
   width: 620px;
@@ -537,38 +545,176 @@ input[type="search"]:focus+.search-submit{
   padding: 0px;
 }
 
-.relevant .material{
-  background-color: #ffbf47;
-}
-.relevant .instruments{
-  background-color: #3bbce3;
-}
-.relevant .equipment{
-  background-color: #dc91d8;
-}
-.relevant .sale{
-  background-color: #8ed78f;
-}
-.relevant .delivery{
-  background-color: #ffc047;
+.additional h3{
+  display: block;
+  width: 150px;
+  min-height: 48px;
+  box-sizing: border-box;
+
+  padding-left: 20px;
+  padding-top: 26px;
+
+  text-align: left;
 }
 
-.relevant a{
+.additional a{
+  display: block;
+
+  width: 135px;
+  height: 38px;
+  box-sizing: border-box;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 
+  padding-top: 12px;
+  margin-left: 25px;
+  margin-top: 15px;
 
   background-color: rgba(0, 0, 0, 0.1);
 }
-.relevant a:hover,
-.relevant a:focus{
+.additional a:hover,
+.additional a:focus{
   background-color: rgba(0, 0, 0, 0.2);
 }
-.relevant a:active{
+.additional a:active{
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.additional .new{
+  position: absolute;
+  top:-1px;
+  right:-1px;
+  width:60px;
+  height:60px;
+  text-indent:-1000px;
+  overflow:hidden;
+  z-index:20;
+
+  background-image: url("../img/new-price.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+.additional::before{
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  min-width: 78px;
+  min-height: 72px;
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.relevant .material{
+  background-color: #ffbf47;
+}
+.relevant .material::before{
+  background-image: url("../img/index/icon-1.svg");
+}
+
+.relevant .instruments{
+  background-color: #3bbce3;
+}
+.relevant .instruments::before{
+  background-image: url("../img/index/icon-2.svg");
+}
+
+.relevant .equipment{
+  background-color: #dc91d8;
+}
+.relevant .equipment::before{
+  background-image: url("../img/index/icon-3.svg");
+}
+
+.relevant .sale{
+  background-color: #8ed78f;
+}
+.relevant .sale::before{
+  background-image: url("../img/index/icon-4.svg");
+}
+
+.relevant .delivery{
+  background-color: #ffc047;
+}
+.relevant .delivery::before{
+  background-image: url("../img/index/icon-5.svg");
+}
+
+.relevant .slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background:
+  url("../img/index/slider-1.png") no-repeat center ,
+  url("../img/index/slider-2.png") no-repeat center;
+}
+
+.slide .handle{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 40px;
+}
+.handle button{
+  margin: 0px;
+  padding: 0px;
+  border:0px;
+
+  margin-top: 5px;
+  width: 22px;
+  min-height: 40px;
+}
+
+.handle .handle-left{
+  margin-left: 25px;
+
+  background-color: transparent;
+}
+.handle .handle-right{
+  margin-right: 25px;
+
+  background-color: transparent;
+}
+
+.slide .button{
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+
+  width: 195px;
+}
+
+.slide .dots{
+  position: absolute;
+  bottom: 36px;
+
+  width: 6px;
+  min-height: 6px;
+
+  background-color: #ffffff;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 5px;
+}
+.slide .dots-left{
+  left: 295px;
+}
+.slide .dots-right{
+  right: 297px;
+}
+.dots.active{
+  background-color: #ee3643;
+}
 
 .popular-items{
   display: flex;
@@ -799,7 +945,6 @@ input[type="search"]:focus+.search-submit{
 
 .new-item{
   position: absolute;
-  position:absolute;
   top:-1px;
   right:-1px;
   width:60px;
