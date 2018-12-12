@@ -1083,18 +1083,35 @@ input[type="search"]:focus+.search-submit{
 }
 
 .service-list a{
+  display: block;
+  box-sizing: border-box;
+  width: 220px;
+  min-height: 61px;
+
   font-size: 21px;
   line-height: 30px;
+  text-align: left;
+
+  padding-left: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   background-color: #33445a;
+
+  box-shadow: inset 0px -1px 0 0 #33445a;
 }
-.service-list a:hover,
-.service-list a:focus{
+.service-list a:hover:not(.active),
+.service-list a:focus:not(.active){
   background-color: #293449;
 }
-.service-list a:active{
+.service-list a:active:not(.active){
   color: #32425c;
 
+  background-color: #ffffff;
+}
+
+.service-list .active{
+  color: #32425c;
   background-color: #ffffff;
 }
 
@@ -1122,6 +1139,7 @@ input[type="search"]:focus+.search-submit{
   color: #000000;
   display: flex;
 
+  margin-bottom: 87px;
 }
 
 .main-info .info{
@@ -1156,8 +1174,30 @@ input[type="search"]:focus+.search-submit{
   font-size: 18px;
   line-height: 1.11;
 
-  margin-left: 0px;
+  margin: 0px;
   padding-left: 0px;
+  margin-bottom: 35px;
+
+}
+
+.delivery-methods li{
+  padding-left: 30px;
+
+  position: relative;
+}
+.delivery-methods li::after{
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translatey(-50%);
+
+  width:25px;
+  height: 2px;
+
+  background-color: #ee3643;
 }
 
 .main-info .info-geo{
