@@ -1416,14 +1416,16 @@ input[type="search"]:focus+.search-submit{
 
   font-size: 18px;
   line-height: 1.33;
+
+  margin-bottom: 50px;
 }
 
 .footer-column-left{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+    flex-shrink: 0;
 
-  margin-right: 68px;
 }
 
 .footer-nav .logo{
@@ -1432,29 +1434,51 @@ input[type="search"]:focus+.search-submit{
 
   padding-left: 41px;
   padding-right: 41px;
+
+  margin-bottom: 30px;
 }
 
 .footer-nav p{
   color: #f3f7f9;
+
+  margin: 0px;
 }
 
 .footer-column-right{
+  flex-basis: 100%;
+  box-sizing: border-box;
+  width: 547px;
+
+  padding-top: 30px;
+  padding-bottom: 10px;
 
 }
 
-.footer-main-nav{
+.footer-column-right .footer-main-nav{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+
+  margin-left: 60px;
+
+  margin-bottom: 25px;
 }
 
-.footer-add-nav{
+.footer-column-right .footer-add-nav{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+
+  margin-left: 80px;
 }
+
+.footer-button{
+  margin-right: 60px;
+}
+.footer-button.last{
+  margin-right: 0;
+}
+
 .footer-add-nav a{
   color: #ffd180;
 }
@@ -1480,12 +1504,17 @@ input[type="search"]:focus+.search-submit{
 .footer-bottom{
   display: flex;
   flex-direction: row;
-
+  align-items: center;
 
   font-size: 16px;
   line-height: 1.13;
 
   color: #ffffff;
+
+  min-height: 107px;
+}
+.footer-bottom p{
+  margin: 0px;
 }
 
 .footer-bottom  a{
@@ -1501,7 +1530,45 @@ input[type="search"]:focus+.search-submit{
   color: #ee3643;
 }
 
-.social{
-  display: none;
+.footer-bottom .footer-info{
+  margin-right: 163px;
+}
 
+.social ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0px;
+
+  margin-right: 119px;
+}
+
+.social li{
+  margin-right: 4px;
+}
+
+.social .social-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 42px;
+  min-height: 42px;
+
+  background-color: #212a3a;
+
+  border: 1px solid #212a3a;
+  border-radius: 20px;
+
+}
+.social-button:hover,
+.social-button:focus,
+.social-button:active{
+  background-color: #ee3643;
+}
+
+.footer-bottom .feedback{
+  margin-right: 53px;
 }
