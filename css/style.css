@@ -226,10 +226,9 @@ input[type="search"]:focus+.search-submit{
 }
 
 .basket{
-  position: relative;
-}
-.basket{
   display: block;
+
+  position: relative;
 
   width: 150px;
   min-height: 42px;
@@ -240,6 +239,19 @@ input[type="search"]:focus+.search-submit{
 
   box-sizing: border-box;
 }
+
+.not-empty{
+  background-color: #ee3643;
+}
+
+.bookmarks.not-empty{
+  background-color: #ee3643;
+}
+
+.basket.not-empty{
+  background-color: #ee3643;
+}
+
 .basket::after{
   content: "";
   position: absolute;
@@ -251,7 +263,6 @@ input[type="search"]:focus+.search-submit{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' style='opacity:0.3;'%3E%3Ccircle cx='4.5' cy='13.5' r='1.5' fill='%23ffffff'/%3E%3Ccircle cx='12.5' cy='13.5' r='1.5' fill='%23ffffff'/%3E%3Cpath d='M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .bookmarks:hover,
@@ -279,6 +290,22 @@ input[type="search"]:focus+.search-submit{
 }
 .basket:active::after{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' style='opacity:0.5;'%3E%3Ccircle cx='4.5' cy='13.5' r='1.5' fill='%23ffffff'/%3E%3Ccircle cx='12.5' cy='13.5' r='1.5' fill='%23ffffff'/%3E%3Cpath d='M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
+}
+
+.bookmarks.not-empty:hover,
+.bookmarks.not-empty:focus{
+  background-color: #ca2c37;
+}
+.bookmarks.not-empty:active{
+  background-color: #ba2732;
+}
+
+.basket.not-empty:hover,
+.basket.not-empty:focus{
+  background-color: #ca2c37;
+}
+.basket.not-empty:active{
+  background-color: #ba2732;
 }
 
 .order{
@@ -442,6 +469,118 @@ input[type="search"]:focus+.search-submit{
 .account .entrance:active::after{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='17' viewBox='0 0 20 17' style='opacity:0.5;'%3E%3Cpath fill='%2332425C' d='M14.875 8.5L6 0v6H0v5h6v6z'/%3E%3Cpath fill='%2332425C' d='M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z'/%3E%3C/svg%3E");
 }
+/*User logged in*/
+.account.entered{
+  flex-wrap: wrap;
+
+  margin-left: -20px;
+}
+
+.account .account-user{
+  position: relative;
+
+  width: 300px;
+  min-height: 21px;
+  box-sizing: border-box;
+
+  padding: 0px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
+}
+.account .account-exit{
+  position: absolute;
+  right:  0px;
+  top: 0px;
+
+  width: 55px;
+  height: 21px;
+  box-sizing: border-box;
+
+  padding-top: 14px;
+
+  background-color: transparent;
+
+  opacity: 0.3;
+}
+
+.account-user .user-name::before{
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 20px;
+  height: 18px;
+  background-color: transparent;
+
+  opacity: 0.3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 18'%3E%3Cpath fill='%2332425C' d='M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z'/%3E%3C/svg%3E%0A");
+
+}
+.account .account-user:hover,
+.account .account-user:focus{
+  color: #000000;
+}
+.account .account-user:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.account-user:hover .user-name::before,
+.account-user:focus .user-name::before{
+  opacity: 1;
+}
+.account-user:active .user-name::before{
+  opacity: 0.3;
+}
+
+.account .account-exit:hover,
+.account .account-exit:focus{
+  opacity: 1;
+}
+.account .account-exit:active{
+  opacity: 0.3;
+}
+
+
+.account .account-actions{
+  display: flex;
+
+  width: 300px;
+}
+.account-actions a{
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+
+  min-height: 18px;
+
+  padding-top: 0px;
+
+  background-color: transparent;
+}
+.account-actions .my-orders::after{
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 110px;
+
+  width: 4px;
+  height: 5px;
+  box-sizing: border-box;
+  border: 1px solid #32425c;
+  border-radius: 10px;
+
+  background-color: #32425c;
+}
+.account-actions a:hover,
+.account-actions a:focus{
+  text-decoration: underline;
+}
+.account-actions a:active{
+  text-decoration: none;
+}
+/*--------------*/
 
 
 .header-bottom{
