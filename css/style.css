@@ -1472,7 +1472,6 @@ input[type="search"]:focus+.search-submit{
 }
 
 
-
 .sorting{
   display: flex;
 
@@ -1485,27 +1484,93 @@ input[type="search"]:focus+.search-submit{
   background-color: #f7f3ec;
 
   margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
 }
 
 .sorting h2{
   font:inherit;
+
+  margin: 0px;
+  padding: 0px;
+  margin-right: 139px;
 }
 
 .sorting .sorting-menu{
+  display: flex;
   list-style: none;
+
+  margin: 0px;
+  padding: 0px;
 }
 
-.sorting-menu a{
+.sorting-text{
+  font-size: 13px;
+  line-height: 18px;
+
+  border-bottom: 1px dotted #ee3643;
+
   color: rgba(0, 0, 0, 0.3);
 }
-.sorting-menu a:hover:not(.active),
-.sorting-menu a:focus:not(.active){
-  color: #000000;
+
+.sorting-text:not(.sorting-active):hover,
+.sorting-text:not(.sorting-active):focus{
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #ee3643;
 }
-.sorting-menu a:active,
-.sorting-menu .active{
+.sorting-text:not(.sorting-active):active{
+  border:none;
   color: #ee3643;
 }
+
+.sorting .sorting-active{
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.sorting-menu .sorting-price{
+  margin-right: 71px;
+}
+
+.sorting-menu .sorting-type{
+  margin-right: 65px;
+}
+
+.sorting-menu .sorting-funct{
+  margin-right: 46px;
+}
+
+.sorting-menu .sorting-up{
+  width: 11px;
+  height: 10px;
+  opacity: 0.3;
+  fill: #231F20;
+  margin-right: 21px;
+}
+
+.sorting-menu .sorting-down{
+  width: 11px;
+  height: 10px;
+  opacity: 0.3;
+  fill: #231F20;
+}
+
+.sorting-menu .sorting-active-flag{
+  fill: #ee3643;
+  opacity: 1;
+}
+
+.sorting-flag:not(.sorting-active):hover,
+.sorting-flag:not(.sorting-active):focus{
+  opacity: 1;
+}
+.sorting-flag:not(.sorting-active):active{
+  fill: #ee3643;
+}
+
+
+
 
 
 .pagination{
