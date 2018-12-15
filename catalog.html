@@ -109,19 +109,51 @@
             <fieldset class="filter filter-manufacturer">
               <legend class="filter-title">Производители</legend>
               <p>
-                <label><input type="checkbox" name="manufacturer" checked value="bosch">BOSCH</label><br>
-                <label><input type="checkbox" name="manufacturer" value="intersckol">ИНТЕРСКОЛ</label><br>
-                <label><input type="checkbox" name="manufacturer" checked value="makita">MAKIta</label><br>
-                <label><input type="checkbox" name="manufacturer" value="dewalt">Dewalt</label><br>
-                <label><input type="checkbox" name="manufacturer" value="hitachi">Hitachi</label>
+                <label class="checkbox">
+                  <input class="checkbox-input" type="checkbox" name="manufacturer" checked value="bosch">
+                  <span class="checkbox-custom custom"></span>
+                  <span class="checkbox-label custom-label">BOSCH</span>
+                </label>
+
+                <label class="checkbox">
+                  <input class="checkbox-input" type="checkbox" name="manufacturer" value="intersckol">
+                  <span class="checkbox-custom custom"></span>
+                  <span class="checkbox-label custom-label">ИНТЕРСКОЛ</span>
+                </label>
+
+                <label class="checkbox">
+                  <input class="checkbox-input" type="checkbox" name="manufacturer" checked value="makita">
+                  <span class="checkbox-custom custom"></span>
+                  <span class="checkbox-label custom-label">MAKIta</span>
+                </label>
+
+                <label class="checkbox">
+                  <input class="checkbox-input" type="checkbox" name="manufacturer" value="dewalt">
+                  <span class="checkbox-custom custom"></span>
+                  <span class="checkbox-label custom-label">Dewalt</span>
+                </label>
+
+                <label class="checkbox">
+                  <input class="checkbox-input" type="checkbox" name="manufacturer" value="hitachi">
+                  <span class="checkbox-custom custom"></span>
+                  <span class="checkbox-label custom-label">Hitachi</span>
+                </label>
               </p>
             </fieldset>
 
             <fieldset class="filter filter-nutrition">
               <legend class="filter-title">Питание:</legend>
+              <label class="radio">
+                <input disabled class="radio-input" type="radio" name="nutrition" value="battery" checked>
+                <span class="radio-custom custom"></span>
+                <span class="radio-label custom-label">Аккумуляторные</span>
+              </label>
 
-              <label><input type="radio" name="nutrition" value="battery" checked>Аккумуляторные</label><br>
-              <label><input type="radio" name="nutrition" value="network">Сетевые</label>
+              <label class="radio">
+                <input class="radio-input" type="radio" name="nutrition" value="network">
+                <span class="radio-custom custom"></span>
+                <span class="radio-label custom-label">Сетевые</span>
+              </label>
             </fieldset>
             <button type="submit"  class="filters-submit">Показать</button>
           </form>
