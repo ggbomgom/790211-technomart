@@ -1519,9 +1519,15 @@ input[type="search"]:focus+.search-submit{
   position: relative;
     opacity: 0.4;
 }
-.filter .custom:hover,
-.filter .custom:focus{
+.checkbox:hover .custom,
+.checkbox:focus .custom,
+.radio:hover .custom,
+.radio:focus .custom{
   opacity: 0.5;
+}
+.checkbox-input:disabled~span[class*="custom"],
+.radio-input:disabled~span[class*="custom"]{
+  opacity: 0.3;
 }
 
 .filter .custom::before{
@@ -2069,6 +2075,7 @@ input[type="search"]:focus+.search-submit{
   padding-top: 10px;
   padding-left: 16px;
   margin-top: 13px;
+  resize: none;
 }
 
 .pop-up-actions{
