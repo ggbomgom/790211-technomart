@@ -950,6 +950,7 @@ input[type="search"]:focus+.search-submit{
   margin: -1px; padding: 0; border: 0;
 }
 
+
 .item-actions .buy,
 .item-actions .bookmark{
   display: block;
@@ -957,44 +958,66 @@ input[type="search"]:focus+.search-submit{
   width:129px;
 
 
-  margin:0 auto;
-  margin-bottom:7px;
-  padding:7px 0px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0px;
 
-  color:white;
-  font-size:14px;
-  font-weight:normal;
-  font-family:"Cuprum", sans-serif;
-  line-height:18px;
-  text-decoration:none;
-  text-transform:uppercase;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
 
-  border:3px solid #63a63e;
-  border-bottom-color:#367315;
-  background-color:#63a63e;
-  border-radius:3px;
+  border:3px solid  #63a63e;
+  border-bottom-color: #367315;
+  background-color: #63a63e;
+  border-radius: 3px;
 }
 
 .item-actions .buy{
   position: relative;
 }
-.item-actions .buy::after{
+.item-actions .buy::before{
   content: "";
   position: absolute;
-  left: 14px;
-  top: 11px;
-
+  top: 8px;
+  left:12px;
   width: 15px;
+  height: 15px;
+  opacity: 0.3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' %3E%3Ccircle fill='%23ffffff' cx='4.5' cy='13.5' r='1.5'/%3E%3Ccircle fill='%23ffffff' cx='12.5' cy='13.5' r='1.5'/%3E%3Cpath fill='%23ffffff' d='M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z'/%3E%3C/svg%3E");
+}
 
-  background-image: url("../img/cart-icon.png");
-  background-repeat: no-repeat;
-
+.item-actions .buy:hover,
+.item-actions .buy:focus{
+  background-color: #5fbb2d;
+  border-color: #5fbb2d;
+  border-bottom-color: #367315;
+}
+.buy:hover::before,
+.buy:focus::before{
+  opacity: 1;
+}
+.item-actions .buy:active{
+  background-color: #518534;
+  border-color: #518534;
 }
 
 .item-actions .bookmark{
-  color:#32425c;
-  background:white;
-  border-bottom-color:#63a63e;
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.item-actions .bookmark:hover,
+.item-actions .bookmark:focus{
+  border-color: #32425c;
+  color: #32425c;
+}
+.item-actions .bookmark:active{
+  opacity: 0.3;
 }
 
 .catalog-item:hover .item-actions{
