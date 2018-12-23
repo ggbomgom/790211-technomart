@@ -1,20 +1,25 @@
 var batton_help= document.querySelector('.batton-help');
-var module_help= document.querySelector('.question');
+var popus_help= document.querySelector('.question');
 var img_geo= document.querySelector('.img-geo');
-var module_map= document.querySelector('.map');
-var module_= document.querySelector('.pop-up');
-var module_close= document.querySelectorAll('.close');
+var popus_map= document.querySelector('.map');
+
+var popus= document.querySelectorAll('.pop-up');
+var popus_close= [];
+
+for (var i = 0; i < popus.length; i++) {
+    popus_close[i]=popus[i].querySelector('.close');
+
+    popus_close[i].addEventListener("click", function(evt){
+      evt.preventDefault();
+      popus[i].classList.remove("pop-up-visible");
+    });
+};
 
 batton_help.addEventListener("click", function(evt) {
   evt.preventDefault();
-  module_help.classList.add("pop-up-visible");
+  popus_help.classList.add("pop-up-visible");
 });
 
 img_geo.addEventListener("click", function(evt){
-  module_map.classList.add("pop-up-visible");
-});
-
-module_close.addEventListener("click", function(evt){
-  evt.preventDefault();
-  module_.classList.remove("pop-up-visible");
+  popus_map.classList.add("pop-up-visible");
 });
