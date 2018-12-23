@@ -16,7 +16,7 @@ var set_popup_handlers= function(popup){
 
   popup_close.addEventListener("click", function(evt){
     evt.preventDefault();
-    popup.classList.remove("pop-up-visible")
+    popup.classList.remove("pop-up-visible");
   })
 };
 
