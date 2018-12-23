@@ -30,8 +30,7 @@ a{
 
   background-color: #ee3643;
 
-
-
+  border-radius: 2px;
 }
 .button:hover,
 .button:focus{
@@ -1128,6 +1127,7 @@ input[type="search"]:focus+.search-submit{
   background-color: #ee3643;
 
   position: relative;
+  border-radius: 2px;
 }
 .catalog-item .new-price::after{
   content: "";
@@ -1552,15 +1552,112 @@ input[type="search"]:focus+.search-submit{
   width: 220px;
   min-height: 38px;
   box-sizing: border-box;
+  border-radius: 5px;
 
   background-color: #f7f3ec;
 
   margin: 0px;
   padding: 0px;
   padding-left: 18px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
 }
+
+.filters .filter-price{
+  margin: 0px;
+  padding: 0px;
+
+  border: none;
+}
+.filter-price .price-title{
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.filter-price .range-filter{
+  width: 220px;
+}
+
+
+.range-filter .range-controls{
+  position: relative;
+  box-sizing: border-box;
+  height: 80px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #f7f3ec;
+
+  margin-bottom: 9px;
+  border-radius: 5px;
+}
+.range-controls .scale{
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 140px;
+}
+
+.filter-price .price-controls{
+  display: flex;
+  justify-content: center;
+
+  margin-right: -30px;
+}
+.price-controls label{
+  margin-right: 30px;
+}
+.price-controls input{
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 95px;
+  min-height: 38px;
+  border: none;
+  background-color: #f7f3ec;
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  border-radius: 5px;
+}
+
+
 
 .filters .filter{
   position: relative;
@@ -1681,6 +1778,7 @@ input[type="search"]:focus+.search-submit{
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+  border-radius: 2px;
 }
 
 
@@ -1702,6 +1800,7 @@ input[type="search"]:focus+.search-submit{
   text-transform: uppercase;
 
   background-color: #f7f3ec;
+  border-radius: 5px;
 
   margin-bottom: 20px;
   padding-top: 10px;
@@ -2061,7 +2160,12 @@ input[type="search"]:focus+.search-submit{
 }
 
 .pop-up.question{
+  position: fixed;
+  left: 24%;
+  bottom: 18%;
+  z-index: 101;
   padding-top: 46px;
+  background-color: #ffffff;
 }
 
 .question .question-form::after{
@@ -2172,6 +2276,10 @@ input[type="search"]:focus+.search-submit{
 
 
 .pop-up.map{
+  position: fixed;
+  left: 11%;
+  top: 2%;
+  z-index: 102;
   width: 940px;
   min-height: 447px;
   padding: 0px;
@@ -2181,13 +2289,22 @@ input[type="search"]:focus+.search-submit{
 
 
 .pop-up.added-item{
+  position: fixed;
+  left: 24%;
+  top: 18%;
   flex-direction: column;
   min-height: 282px;
   padding: 0px;
   margin: 0px;
+
+  background-color: #ffffff;
+  z-index: 100;
 }
 
 .added-item .title-added{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
   width: 620px;
   min-height: 163px;
   box-sizing: border-box;
