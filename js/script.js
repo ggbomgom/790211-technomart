@@ -26,6 +26,7 @@ for (var i = 0; i < popups.length; i++) {
 
 try {
   batton_help.addEventListener("click", function(evt){
+    evt.preventDefault();
     popup_help.classList.add("pop-up-visible");
   });
  q}
@@ -35,6 +36,7 @@ catch (e) {
 
 try {
   img_geo.addEventListener("click", function(evt){
+    evt.preventDefault();
     popup_map.classList.add("pop-up-visible");
   });
 } catch (e) {
