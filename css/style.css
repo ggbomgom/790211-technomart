@@ -3,7 +3,7 @@ body{
   margin:0px;
   padding: 0px;
 
-  font-family: Cuprum, Arial, sans-serif;
+  font-family: "Cuprum" , "Arial" , sans-serif;
 
 }
 
@@ -1057,7 +1057,7 @@ input[type="search"]:focus+.search-submit{
       -ms-flex-pack: start;
           justify-content: flex-start;
 
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans" , "Arial" ,sans-serif;
   font-weight: bold;
   font-size: 18px;
 
@@ -1149,7 +1149,7 @@ input[type="search"]:focus+.search-submit{
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum" , "Arial" , sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1434,7 +1434,7 @@ input[type="search"]:focus+.search-submit{
 }
 
 .service-tagline{
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans" , "Arial" , sans-serif;
   font-size: 13px;
   line-height: 24px;
 
@@ -1530,7 +1530,7 @@ input[type="search"]:focus+.search-submit{
 .service .description{
   width: 750px;
   min-height: 210px;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans" , "Arial" ,sans-serif;
   font-size: 13px;
   line-height: 1.85;
 
@@ -1585,7 +1585,7 @@ input[type="search"]:focus+.search-submit{
 }
 
 .main-info p{
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", "Arial" , sans-serif;
   font-size: 13px;
   line-height: 1.85;
 
@@ -1651,7 +1651,7 @@ input[type="search"]:focus+.search-submit{
   display: -ms-flexbox;
   display: flex;
 
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans" , "Arial" , sans-serif;
   font-size: 13px;
   line-height: 1.38;
 
@@ -1733,7 +1733,7 @@ input[type="search"]:focus+.search-submit{
 
 .filters{
 
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans" , "Arial" , sans-serif;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.33;
@@ -2034,7 +2034,7 @@ input[type="search"]:focus+.search-submit{
   display: -ms-flexbox;
   display: flex;
 
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", "Arial" , sans-serif;
   font-weight:normal;
   font-size: 13px;
   line-height: 18px;
@@ -2148,7 +2148,7 @@ input[type="search"]:focus+.search-submit{
 }
 
 .pagination a{
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", "Arial" ,sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.38;
@@ -2211,7 +2211,7 @@ input[type="search"]:focus+.search-submit{
 }
 
 .inner-info p{
-  font-family: 'PT Sans',sans-serif;
+  font-family: "PT Sans" , "Arial" ,sans-serif;
   font-size: 13px;
   line-height: 1.85;
   font-weight: normal;
