@@ -173,6 +173,9 @@ a{
   width: 270px;
   height: 100%;
 }
+.search input[type="search"]::placeholder{
+  color: #ffffff;
+}
 
 .search .search-submit{
   position: absolute;
@@ -390,6 +393,7 @@ input[type="search"]:focus+.search-submit{
 
 .header-title{
   display: block;
+  width: 200px;
   min-width: 200px;
   min-height: 60px;
   -webkit-box-sizing: border-box;
@@ -910,10 +914,12 @@ input[type="search"]:focus+.search-submit{
   right: 0px;
   width: 620px;
   min-height: 266px;
-  z-index: -1;
+  z-index: -2;
 }
 .slider p{
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 20px;
   left: 24px;
   color: #ffffff;
@@ -927,13 +933,19 @@ input[type="search"]:focus+.search-submit{
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
+  margin-bottom: 8px;
 
 }
 .slider img{
   width: 100%;
 }
+
 .sliders .slider-1{
-  z-index: -2;
+  z-index: -3;
+  background-color: #b2a99e;
+}
+.sliders .slider-1 {
+  background-color: #b2a99e;
 }
 
 .sliders .handle{
@@ -1439,6 +1451,7 @@ input[type="search"]:focus+.search-submit{
   line-height: 24px;
 
   margin-bottom: 70px;
+  width: 400px;
 }
 
 .service-help-column{
@@ -1636,6 +1649,10 @@ input[type="search"]:focus+.search-submit{
 
 .info-geo img{
   margin-bottom: 40px;
+}
+
+.info-geo p{
+  width: 180px;
 }
 /*------------------*/
 /*Internal page properties*/
@@ -2017,7 +2034,15 @@ input[type="search"]:focus+.search-submit{
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
-  border-radius: 2px;
+  border-radius: 5px;
+}
+.filters-submit:hover,
+.filters-submit:focus{
+  border-color: #bdc6ca;
+  outline: none;
+}
+.filters-submit:active{
+  border-color: #ee3643;
 }
 
 
@@ -2262,6 +2287,10 @@ input[type="search"]:focus+.search-submit{
 
 }
 
+.footer-column-left p{
+  width: 325px;
+}
+
 .footer-nav .logo{
   font-size: 30px;
   line-height: 1;
@@ -2390,7 +2419,8 @@ input[type="search"]:focus+.search-submit{
 }
 
 .footer-bottom .footer-info{
-  margin-right: 163px;
+  margin-right: 162px;
+  width: 560px;
 }
 
 .social ul{
@@ -2647,6 +2677,7 @@ input[type="search"]:focus+.search-submit{
   padding: 0px;
   margin: 0px;
   border: none;
+  background-color: rgba(229, 227, 231, 1);
 }
 
 
